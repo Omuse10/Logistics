@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -54,6 +54,12 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+  if (loadingComplete) {
+    window.scrollTo(0, 0);
+  }
+}, [loadingComplete]);
+
   const handleLoadingComplete = () => {
     setLoadingComplete(true);
   };
@@ -66,7 +72,7 @@ function App() {
         )}
       </AnimatePresence>
 
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <Layout>
           <PageWrapper>
@@ -79,7 +85,7 @@ function App() {
             </Routes>
           </PageWrapper>
         </Layout>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
