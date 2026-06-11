@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import Logo from '../assets/Logo1.png';
+import Logo from '../assets/Logo.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,7 +56,7 @@ const Navbar = () => {
               <img
                 src={Logo}
                 alt="IntelWise Logistics"
-                className="h-11 w-auto object-contain"
+                className="h-18 w-auto object-contain"
               />
             </motion.div>
           </Link>

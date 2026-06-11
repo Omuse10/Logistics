@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Logo from '../assets/Logo1.png';
 
 interface LoadingScreenProps {
   onComplete: () => void;
@@ -70,9 +71,9 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
           className="bg-white/10 backdrop-blur-sm rounded-2xl px-8 py-5 mb-8 border border-white/10"
         >
           <img
-            src="/intelwise-logistics.png"
+            src={Logo}
             alt="IntelWise Logistics"
-            className="h-20 w-auto object-contain"
+            className="h-24 w-auto object-contain"
           />
         </motion.div>
 
