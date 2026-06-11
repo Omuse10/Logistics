@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Logo from '../assets/Logo1.png';
 import {
   Mail,
   Phone,
@@ -58,7 +59,7 @@ const Footer = () => {
                 className="bg-white/10 backdrop-blur-sm rounded-xl px-3 py-2 inline-block"
               >
                 <img
-                  src="/intelwise-logistics.png"
+                  src={Logo}
                   alt="IntelWise Logistics"
                   className="h-14 w-auto object-contain"
                 />
@@ -166,7 +167,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-sm">
-            © 2024 IntelWise Logistics. All rights reserved.
+            © 2026 IntelWise Logistics. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             {socialLinks.map((social) => (
