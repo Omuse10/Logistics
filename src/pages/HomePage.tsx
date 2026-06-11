@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
+import Logo from '../assets/Logo1.png';
 import {
   ArrowRight,
   Plane,
@@ -285,9 +286,9 @@ const AnimatedGlobe = () => {
       >
         <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center shadow-2xl">
           <img
-            src="/intelwise-logistics.png"
+            src={Logo}
             alt="IntelWise Logistics"
-            className="w-52 md:w-64 h-auto object-contain"
+            className="w-72 md:w-80 h-72 md:h-80 rounded-full object-cover"
           />
         </div>
 
@@ -1201,7 +1202,7 @@ const CTASection = () => {
           <motion.div variants={fadeInUp} className="flex justify-center mb-8">
             <div className="bg-white/8 backdrop-blur-sm rounded-2xl px-6 py-3 border border-white/10 inline-block">
               <img
-                src="/intelwise-logistics.png"
+                src={Logo}
                 alt="IntelWise Logistics"
                 className="h-12 w-auto object-contain"
               />
