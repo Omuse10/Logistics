@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
-import Logo from '../assets/Logo1.png';
+import Logo from '../assets/Logo3.png';
 import {
   ArrowRight,
   Plane,
